@@ -1,53 +1,79 @@
 # 🎯 Prompts para Ingeniería de Software
 
-Repositorio de prompts profesionales diseñados para optimizar el trabajo con asistentes de IA en tareas de arquitectura de software, exploración de código y creación de presentaciones técnicas.
+Repositorio de prompts profesionales diseñados para optimizar el trabajo con asistentes de IA (especialmente Claude Code) en tareas de desarrollo, debugging, testing, documentación y arquitectura de software.
+
+---
+
+## 🚀 Inicio Rápido
+
+**📑 [Ver Índice Completo](00_INDICE.md)** - Guía de todos los patrones disponibles
+
+**📋 [Estructura Base](Estructura_Base_Prompts.md)** - Template universal para crear tus propios prompts
+
+---
 
 ## 📋 Contenido
 
-Este repositorio contiene prompts especializados y probados para diferentes escenarios del desarrollo de software:
+Este repositorio contiene dos colecciones principales:
 
-### 1. Exploración de Proyectos
+### 🔹 Colección 1: Patrones de Prompts para Claude Code
+
+**[Ver Índice Completo →](00_INDICE.md)**
+
+Siete patrones profesionales organizados por categoría:
+
+#### 🛠️ Desarrollo e Implementación
+- **[01 - Implementar Features](01_Implementacion_Features.md)** - Añadir funcionalidad nueva
+- **[02 - Refactorizar](02_Refactorizacion.md)** - Mejorar código sin cambiar comportamiento
+
+#### 🐛 Debugging y Testing  
+- **[03 - Debugging](03_Debugging.md)** - Depurar con análisis de causa raíz
+- **[04 - Testing](04_Testing.md)** - Escribir tests efectivos (happy path, edge cases, errores)
+
+#### 🔍 Análisis y Exploración
+- **[05 - Exploración de Proyectos](05_Exploracion_Proyectos.md)** - Entender arquitectura y convenciones
+- **[07 - Revisión y Justificación](07_Revision_y_Justificacion.md)** - Evaluar decisiones y alternativas
+
+#### 📚 Documentación
+- **[06 - Documentación](06_Documentacion.md)** - Generar docs útiles y actualizadas
+
+#### ⛓️ Metodología Avanzada
+- **[08 - Encadenamiento de Patrones](08_Metodologia_Encadenamiento.md)** - Combinar patrones en flujos complejos
+
+---
+
+### 🔹 Colección 2: Prompts Especializados
+
+#### Exploración de Proyectos
 **Archivo:** [`Promp_exploraciondeproyectos.txt`](Promp_exploraciondeproyectos.txt)
 
-Contiene dos prompts diseñados para analizar y entender bases de código existentes:
+Dos prompts para analizar y entender bases de código:
+- ✅ Análisis de arquitectura y convenciones
+- ✅ Trazado de flujos de peticiones  
+- ✅ Implementación siguiendo patrones existentes
 
-#### Prompt 1: Análisis de Arquitectura
-- ✅ Análisis de estructura y organización del proyecto
-- ✅ Trazado de flujos de peticiones
-- ✅ Extracción de convenciones de código
-- ✅ Análisis de impacto y dependencias
-
-**Caso de uso:** Ideal para onboarding en proyectos nuevos o auditorías de arquitectura.
-
-#### Prompt 2: Implementación Guiada
-- ✅ Desarrollo siguiendo patrones existentes
-- ✅ Implementación de funcionalidades core
-- ✅ Integración con bases de datos
-- ✅ Creación y ejecución de tests
-
-**Caso de uso:** Implementar nuevas funcionalidades manteniendo la coherencia del código existente.
-
-### 2. Presentaciones de Arquitectura
+#### Presentaciones de Arquitectura
 **Archivo:** [`Promp_presentaciones.md`](Promp_presentaciones.md)
 
-Prompt especializado para crear presentaciones técnicas sobre arquitecturas de software.
+Prom1️⃣ Encuentra el Patrón que Necesitas
+Consulta el **[Índice](00_INDICE.md)** o la **[Guía de Selección Rápida](#-guía-de-selección-rápida)**
 
-#### Contenido generado:
-- 🏗️ Comparativa: Microservicios vs Multi-Monolitos
-- 🔷 Análisis de Arquitectura Hexagonal
-- ⚽ Analogías didácticas (con ejemplos de fútbol)
-- 📊 Tablas comparativas de casos de uso
-- ✅ Ventajas y desventajas de cada enfoque
-- 💡 Temas de interés relacionados
-- 📝 Resumen ejecutivo memorable
+### 2️⃣ Usa el Template
+Cada patrón incluye:
+- 📖 Descripción del problema que resuelve
+- 🏗️ Estructura (contexto, tarea, restricciones, formato, verificación)
+- ✅ Ejemplo completo listo para copiar
+- 💡 Explicación de por qué funciona
+- 🎯 Casos de uso recomendados
 
-**Caso de uso:** Preparar charlas técnicas, capacitaciones internas o documentación de decisiones arquitectónicas.
+### 3️⃣ Personaliza y Aplica
+1. Copia el ejemplo del patrón
+2. Reemplaza los placeholders con tu contexto específico
+3. Pégalo en Claude Code o tu asistente de IA
+4. Verifica el resultado según el componente de verificación
 
-## 🚀 Cómo Usar
-
-### Método 1: Copiar y Pegar
-1. Abre el archivo del prompt que necesites
-2. Copia el contenido completo
+### 4️⃣ Para Tareas Complejas
+Usa el **[Encadenamiento de Patrones](08_Metodologia_Encadenamiento.md)** para combinar múltiples prompts en un flujo verificable.Copia el contenido completo
 3. Pégalo en tu asistente de IA preferido (ChatGPT, Claude, Copilot, etc.)
 4. Ajusta los parámetros específicos de tu proyecto si es necesario
 
@@ -59,43 +85,93 @@ Si usas GitHub Copilot u otra herramienta con acceso al workspace:
 
 ## 💡 Mejores Prácticas
 
-1. **Contextualiza:** Añade contexto específico de tu proyecto antes de usar el prompt
-2. **Itera:** Los prompts son puntos de partida; refina las respuestas según necesites
-3. **Personaliza:** Adapta los prompts a las convenciones de tu equipo
-4. **Documenta:** Guarda los resultados útiles en tu documentación técnica
+### ✅ Principios Fundamentales
+1. **Explora antes de implementar** - Entiende el código existente primero
+2. **Sé específico** - Más detalle = mejor resultado
+3. **Usa restricciones** - Protege lo que ya funciona
+4. **Verifica cada paso** - Detecta problemas temprano
+5. **Encadena para tareas complejas** - No uses mega-prompts
 
-## 🛠️ Personalización
+### 🎯 La Estructura Universal
+Todo prompt efectivo tiene hasta 5 componentes:
+- **Contexto** - Qué necesita saber
+- **Tarea** - Qué tiene que hacer
+- **Restricciones** - Qué NO debe hacer  
+- **Formato** - Cómo quieres el resultado
+- **Verificación** - Cómo confirmar que está bien
 
-Cada prompt puede ser modificado para:
-- Cambiar el nivel de detalle requerido
-- Ajustar el tono y el público objetivo
-- Incluir tecnologías o frameworks específicos
-- Añadir o remover secciones según necesidad
+Ver más en **[Estructura Base](Estructura_Base_Prompts.md)**
 
-## 📚 Casos de Uso Recomendados
+## � Guía de Selección Rápida
 
-| Prompt | Cuándo Usarlo |
-|--------|---------------|
-| **Exploración - Prompt 1** | Primer día en un nuevo proyecto, auditorías de código, revisión de arquitectura |
-| **Exploración - Prompt 2** | Implementar features, mantener consistencia, desarrollo incremental |
-| **Presentaciones** | Tech talks, decisiones de arquitectura, documentación, capacitación de equipos |
+| Si necesitas... | Usa el patrón... |
+|----------------|------------------|
+| Añadir una feature | [01 - Implementación](01_Implementacion_Features.md) |
+| Limpiar código | [02 - Refactorización](02_Refactorizacion.md) |
+| Arreglar un bug | [03 - Debugging](03_Debugging.md) |
+| Escribir tests | [04 - Testing](04_Testing.md) |
+| Entender un proyecto | [05 - Exploración](05_Exploracion_Proyectos.md) |
+| Crear documentación | [06 - Documentación](06_Documentacion.md) |
+| Evaluar una implementación | [07 - Revisión](07_Revision_y_Justificacion.md) |
+| T🎓 Flujo de Trabajo Recomendado
 
-## 🤝 Contribuciones
+Para cualquier tarea significativa, sigue esta secuencia:
 
-Este es un repositorio personal de prompts en evolución. Si encuentras mejoras o tienes sugerencias:
-- Abre un issue con tu propuesta
-- Comparte variaciones que te hayan funcionado
-- Sugiere nuevos prompts para casos de uso específicos
+```
+1. EXPLORAR    → Entiende el código existente
+2. IMPLEMENTAR → Añade lo que necesitas  
+3. TESTEAR     → Verifica que funciona
+4. JUSTIFICAR  → Revisa decisiones
+5. DOCUMENTAR  → Registra los cambios
+```
 
-## 📝 Notas
+Cada paso produce algo verificable antes de continuar al siguiente.
 
-- Los prompts están diseñados para ser **independientes del lenguaje y framework**
-- Se enfocan en **principios y patrones** más que en tecnologías específicas
-- Están optimizados para obtener **respuestas estructuradas y accionables**
+---
+
+## 📚 Recursos
+
+- **[Índice Completo](00_INDICE.md)** - Todos los patrones organizados
+- **[Estructura Base](Estructura_Base_Prompts.md)** - Template universal para prompts
+- **[Metodología de Encadenamiento](08_Metodologia_Encadenamiento.md)** - Cómo combinar patrones
+
+---
+
+## 📝 Características
+
+- ✅ **Independientes del lenguaje** - Aplican a cualquier stack
+- ✅ **Basados en principios** - No en tecnologías específicas  
+- ✅ **Verificables** - Cada prompt incluye cómo comprobar el resultado
+- ✅ **Modulares** - Combínalos según necesites
+- ✅ **Probados** - Patrones extraídos de uso real
+
+---
+
+## 🎯 Casos de Uso Reales
+
+### Para Desarrolladores
+- ✅ Onboarding en proyectos nuevos
+- ✅ Implementar features manteniendo consistencia
+- ✅ Refactorizar sin romper funcionalidad
+- ✅ Escribir tests completos y útiles
+
+### Para Tech Leads
+- ✅ Auditorías de código estructuradas
+- ✅ Documentación de decisiones arquitectónicas
+- ✅ Revisión de implementaciones del equipo
+- ✅ Capacitaciones y tech talks
+
+### Para Arquitectos
+- ✅ Análisis de impacto de cambios
+- ✅ Evaluación de alternativas técnicas
+- ✅ Presentaciones comparativas
+- ✅ ADRs (Architecture Decision Records)
+
+---
 
 ## 📄 Licencia
 
-Uso libre para proyectos personales y comerciales. Se agradece atribución pero no es requerida.
+Uso libre para proyectos personales y comerciales.
 
 ---
 
